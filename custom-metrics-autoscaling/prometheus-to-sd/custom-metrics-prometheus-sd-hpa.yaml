@@ -11,7 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-apiVersion: extensions/v1beta1
+
+# [START all]
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dummy-deployment
@@ -50,3 +52,4 @@ spec:
         name: custom-metric-prometheus-sd
       metricName: foo
       targetValue: 20
+# [END all]
